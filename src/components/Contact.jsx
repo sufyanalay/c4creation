@@ -84,8 +84,8 @@ export default function Contact() {
           <div className="space-y-6">
             <div className="grid gap-4 sm:grid-cols-2">
               <InfoCard icon={FiMapPin} title="Address" text="Sialkot, Punjab, Pakistan" />
-              <InfoCard icon={FiPhone} title="Phone" text="+92 300 0000000" />
-              <InfoCard icon={FiMail} title="Email" text="info@c4creation.com" />
+              <InfoCard icon={FiPhone} title="Phone" text="+92 335 7909412" />
+              <InfoCard icon={FiMail} title="Email" text="c4creations0@gmail.com" />
               <InfoCard icon={FiClock} title="Hours" text="Mon–Sat, 9am–6pm" />
             </div>
 

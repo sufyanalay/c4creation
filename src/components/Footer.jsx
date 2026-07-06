@@ -27,8 +27,8 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="space-y-2 text-sm text-cream/70">
-              <li>Email: info@c4creation.com</li>
-              <li>Phone: +92 300 0000000</li>
+              <li>Email: c4creations0@gmail.com</li>
+              <li>Phone: +92 335 7909412</li>
               <li>Sialkot, Pakistan</li>
             </ul>
           </div>
