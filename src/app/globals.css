@@ -2,21 +2,22 @@
 
 @theme {
   --color-ink: #0f0f0f;
-  --color-ink-soft: #171717;
+  --color-ink-soft: #1c1c1c;
   --color-gold: #c8a24b;
   --color-gold-dark: #a8863a;
   --color-cream: #faf9f6;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
+body { background: var(--color-cream); color: var(--color-ink); font-family: var(--font-sans); }
 
-body {
-  background: var(--color-cream);
-  color: var(--color-ink);
-}
-
-/* filmstrip scrollbar hide */
 .no-bar::-webkit-scrollbar { display: none; }
 .no-bar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade { animation: fadeUp .5s ease both; }
