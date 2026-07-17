@@ -5,16 +5,19 @@ import SectionSlider from "@/components/SectionSlider";
 import Footer from "@/components/Footer";
 import { sections } from "@/data/sections";
 import Contact from "@/components/Contact";
+import Reveal from "@/components/Reveal";
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
-      <Features />
+      <Reveal><Features /></Reveal>
       {sections.map((s, i) => (
-        <SectionSlider key={s.slug} section={s} flip={i % 2 === 1} />
+        <Reveal key={s.slug} delay={i * 100}>
+          <SectionSlider section={s} flip={i % 2 === 1} />
+        </Reveal>
       ))}
-            <Contact />
+      <Reveal><Contact /></Reveal>
       <Footer />
     </main>
   );
